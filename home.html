@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Amilat Water Refilling Station">
+   <meta name="author" content="Reg Jamir S. Lopez">
+   <title>Amilat Water Refilling Station</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="icon" href="images/LOGO.jpg" type="image/x-icon">
+</head>
+<body>
+   <style>
+       body {
+           font-family: Arial, sans-serif;
+           background-image: url(https://scontent.fmnl14-1.fna.fbcdn.net/v/t1.15752-9/482996646_554012770425904_4057137871413967840_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeH-qyMyBAsLgXqZQqD_c03Zhyvo7p2pm4KHK-junambgsUHKpkYd7gFupqRF4QCrpcRKWdEWrymX-h42c2jj5N0&_nc_ohc=NWrPSC-sonEQ7kNvgFr-CLc&_nc_oc=AdjKxiB_sDou_LFLlurLD7hdzAHUrRuvILHy8FEC-3G9QdW8vh1WXvvX89U5FCZD4qw&_nc_zt=23&_nc_ht=scontent.fmnl14-1.fna&oh=03_Q7cD1wE8g8Gv0osRH8e4IIZ1zKJntgGsB5iErxp-wIciCme2Qg&oe=67FE15C0);
+           background-repeat: no-repeat;
+           background-position: center center;
+           background-attachment: fixed;
+           background-size: cover;
+       }
+       h1, h2, p {
+           color: #005f73;
+       }
+       header {
+           background-color: #005f73;
+           padding: 20px;
+           color: white;
+       }
+       header .container {
+           max-width: 1200px;
+           margin: 0 auto;
+           text-align: center;
+       }
+       h1 {
+           font-size: 3em;
+           margin-bottom: 10px;
+       }
+       nav ul {
+           list-style-type: none;
+           display: flex;
+           justify-content: center;
+           gap: 10px;
+       }
+       nav ul li {
+           display:inline;
+       }
+       nav a {
+           text-decoration: none;
+           color: white;
+           font-size: 25px;
+           font-weight: bold;
+       }
+       nav a:hover {
+           color: lightblue;
+       }
+       nav {
+    background-color: #005f73; 
+    text-align: center;
+}
+
+/* Navigation List */
+nav ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    justify-content: center; 
+}
+
+
+nav ul li {
+    margin: 0 15px; 
+}
+
+nav a {
+    color: white; 
+    font-size: 18px; 
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: color 0.3s ease; 
+}
+
+
+nav a:hover {
+    color: lightblue; 
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; 
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+   </style>
+
+   <header>
+       <div class="container">
+           <h1>AMILAT WATER REFILLING STATION</h1>
+           
+           <div>
+               <nav>
+                   <ul>
+                       <li><a href="home.html">Home</a></li>
+                       <li><a href="about.html">About</a></li>
+                       <li><a href="services.html">Services</a></li>
+                       <li><a href="contacts.html">Contacts and Order</a></li>
+                   </ul>
+               </nav>
+           </div>
+       </div>
+   </header>
+
+   <h2>Always Have Fresh And Healthy Water!</h2>
+   <h2>Providing clean and affordable water refilling services for your home and business needs.</h2>
+   <script>
+    
+    window.onload = function() {
+    
+        alert("Welcome to Amilat Water Refilling Station!");
+
+        
+        var headings = document.querySelectorAll("h2")
+        headings.forEach(function(heading) {
+            heading.addEventListener("click", function() {
+                this.innerHTML = "You clicked on: " + this.innerHTML;
+            });
+        });
+    };
+</script>
+</body>
+</html>
